@@ -1,0 +1,12 @@
+<form *ngIf="!isRouted" [formGroup]='profileForm' (ngSubmit)="onSubmit()">
+    <label>
+        <p>username</p>
+        <input type="text" formControlName='userName'>
+    </label>
+    <label>
+        <p>password</p>
+        <input type="password" formControlName='passWord'>
+    </label>
+    <P><button type="submit">Login</button></P>
+</form>
+
